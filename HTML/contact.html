@@ -1,0 +1,46 @@
+<!DOCTYPE.html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Rodriguez Jewelers</title>
+        <link rel="stylesheet" href="contact.css">
+    </head>
+
+    <body>
+        <header>
+            <a href="index.html" class="logo">Rodriguez Jewelers, INC</a>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../HTML/products.html">Products</a></li>
+                <li><a href="../HTML/gallery.html">Gallery</a></li>
+                <li><a href="../HTML/about.html">About Us</a></li>
+                <li><a href="../HTML/contact.html">Contact</a></li>
+            </ul>
+        </header>
+        <script type="text/javascript">
+            window.addEventListener("scroll", function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0);
+            })
+        </script>
+        <br><br><br><br><br><br><br><br><br><br>
+        <div class="head">
+            <h1>Contact Us</h1>
+            <br><br>
+            <h2>Send us your questions or concerns and we will give you the help you need!</h2>
+        </div>
+        <div class="contact-form">
+            <form id="contact-form" method="post" action="contact-handler.php">
+                <input name="name"  type="text" class="control" placeholder="Your Name" required>
+                <br>
+                <input name="email" type="email" class="control" placeholder="Your Email" required>
+                <br>
+                <textarea name="message" class="control" placeholder="Message" row="4" required></textarea>
+                <br>
+                <input type="submit" class="control submit" value="SEND MESSAGE">
+            </form>
+        </div>
+    </body>
+    <footer>COPYRIGHT &copy 2020 RODRIGUEZ JEWELERS, INC. - ALL RIGHTS RESERVED.</footer>
+</html>
