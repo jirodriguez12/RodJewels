@@ -1,0 +1,48 @@
+<!DOCTYPE.html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Rodriguez Jewelers</title>
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+
+    <body>
+        <header>
+            <a href="index.html" class="logo">Rodriguez Jewelers, INC</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="HTML/products.html">Products</a></li>
+                <li><a href="HTML/gallery.html">Gallery</a></li>
+                <li><a href="HTML/about.html">About Us</a></li>
+                <li><a href="HTML/contact.html">Contact</a></li>
+            </ul>
+        </header>
+        <!-- esnures banner at very top of screen -->
+        <section class="banner"></section>
+        <script type="text/javascript">
+            window.addEventListener("scroll", function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0);
+            })
+        </script>
+        <form action="HTML/contact.html">
+            <div class="btn">
+                <input type="submit" value="BOOK NOW"></input>
+            </div>
+        </form>
+        <p>Fastest Instant Repairs in Chicago and Beyond!</p>
+        <div class="text">Find Your Style!</div>
+
+        <div class="pic1"><a href="HTML/ceremony.html"><img src="Pictures/ceremony.jpg" class="pic1"><b href="HTML/ceremony.html">Ceremony</b></a></div>
+        <div class="pic2"><a href="HTML/fashion.html"><img src="Pictures/fashion.jpg" class="pic2"><b href="HTML/fashion.html">Fashion</b></a></div>
+        <div class="pic3"><a href="HTML/custom.html"><img src="Pictures/custom.jpg" class="pic3"><b href="HTML/custom.html">Custom</b></a></div>
+    </body>
+    <footer>
+    COPYRIGHT &copy 2021 RODRIGUEZ JEWELERS, INC. - ALL RIGHTS RESERVED.
+    </footer>
+
+
+
+
+</html>
